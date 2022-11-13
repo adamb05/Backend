@@ -12,7 +12,7 @@ environment {
         scannerHome = tool 'SonarQube'
     }
 
-
+  stages {
   stage('Get Code') {
             steps {
                 // Get some code from a GitHub repository
@@ -65,7 +65,7 @@ environment {
             }
     
     }
-
+  }
 
 
         post {
